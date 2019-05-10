@@ -47,7 +47,9 @@ public class DesarrolloPrincipal {
             System.out.println("Ingrese una respuesta valida por favor: ");
             menu = entrada.nextInt();
         }
+        System.out.println(Refresh.refresh);
         
+        System.out.println("Elija el valor de X: ");
         
         switch(menu){
             case '1':
@@ -78,7 +80,7 @@ public class DesarrolloPrincipal {
                 
                 break;
             case '10':
-                
+            
                 break;
         
         }

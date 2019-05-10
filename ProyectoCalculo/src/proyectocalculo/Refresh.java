@@ -10,6 +10,7 @@ package proyectocalculo;
  * @author rober
  */
 public class Refresh {
+    
     public static String refresh = (" \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     
 }

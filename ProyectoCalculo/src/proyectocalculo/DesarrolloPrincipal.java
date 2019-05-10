@@ -7,13 +7,12 @@ package proyectocalculo;
 
 import funciones.*;
 import java.util.Scanner;
-
+import proyectocalculo.*;
 /**
  *
  * @author DAVID
  */
 public class DesarrolloPrincipal {
-
     /**
      * @param args the command line arguments
      */
@@ -44,10 +43,44 @@ public class DesarrolloPrincipal {
         System.out.println(" 9.) f(x) = (10x+3x^3 ) -2");
         System.out.println(" 10.) f(x) = 3^3x+2 +5x-35 \n");
         menu = entrada.nextInt();
+        while ((menu > 10) || (menu < 1)){
+            System.out.println("Ingrese una respuesta valida por favor: ");
+            menu = entrada.nextInt();
+        }
         
         
-        if (menu==1) {
-            
+        switch(menu){
+            case '1':
+                
+                break;
+            case '2':
+                
+                break;
+            case '3':
+                
+                break;
+            case '4':
+                
+                break;
+            case '5':
+                
+                break;
+            case '6':
+                
+                break;
+            case '7':
+                
+                break;
+            case '8':
+                
+                break;
+            case '9':
+                
+                break;
+            case '10':
+                
+                break;
+        
         }
     }
     

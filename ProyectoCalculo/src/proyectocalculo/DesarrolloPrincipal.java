@@ -28,8 +28,10 @@ public class DesarrolloPrincipal {
          */
         Scanner entrada = new Scanner(System.in);
         
-        int menu;
+        int menu, elegir;
+        double inicio, fin, x, y;
         
+        do{
         System.out.println("---- FUNCIONES ----");
         System.out.println("Ejila una de las siguientes funciones");
         System.out.println(" 1.) f(x) = 2x^3 - 6x^2 +20x-1");
@@ -42,46 +44,70 @@ public class DesarrolloPrincipal {
         System.out.println(" 8.) f(x) = 2x*(x^3 +23) ");
         System.out.println(" 9.) f(x) = (10x+3x^3 ) -2");
         System.out.println(" 10.) f(x) = 3^3x+2 +5x-35 \n");
+     
+        
+        System.out.println("Seleccione una opción correcta\n");
         menu = entrada.nextInt();
-        while ((menu > 10) || (menu < 1)){
-            System.out.println("Ingrese una respuesta valida por favor: ");
-            menu = entrada.nextInt();
-        }
         
+     
+        System.out.println("Ingrese el inicio de x:\n");
+        inicio = entrada.nextDouble();
+        System.out.println("Ingrese el fin para x:\n");
+        fin = entrada.nextDouble();
         
-        switch(menu){
-            case '1':
+          
+            switch(menu){
+            case 1:
+                for (x = inicio; x <= fin; x++){
+                    y = 2*Math.pow(x,3) - 6*Math.pow(x,2) +20*x-1;
+                    System.out.printf("x = %.2f   y= %.2f\n",x,y);
+                }
+                                   
                 
                 break;
-            case '2':
+            case 2:
+                for (x = inicio; x <= fin; x++){
+                    y = 6*Math.pow(x,2) - 3/25;
+                    System.out.printf("x = %.2f   y= %.2f\n",x,y);
+                }
+                break;
+            case 3:
+                for (x = inicio; x <= fin; x++){
+                    y = (Math.pow(x,4)-8) / (3*Math.pow(x,2) +5);
+                    System.out.printf("x = %.2f   y= %.2f\n",x,y);
+                }
                 
                 break;
-            case '3':
+            case 4:
                 
                 break;
-            case '4':
+            case 5:
                 
                 break;
-            case '5':
+            case 6:
                 
                 break;
-            case '6':
+            case 7:
                 
                 break;
-            case '7':
+            case 8:
                 
                 break;
-            case '8':
+            case 9:
                 
                 break;
-            case '9':
-                
-                break;
-            case '10':
+            case 10:
                 
                 break;
         
-        }
+           }
+            
+            
+        
+        System.out.println("¿Desea continuar? Digite (1.)\n");
+        elegir = entrada.nextInt();
+        
+        } while (elegir == 1);
     }
-    
+  
 }

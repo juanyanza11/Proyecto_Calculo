@@ -45,10 +45,12 @@ public class DesarrolloPrincipal {
         System.out.println(" 8.) f(x) = 2x*(x^3 +23) ");
         System.out.println(" 9.) f(x) = (10x+3x^3 ) -2");
         System.out.println(" 10.) f(x) = 3^3x+2 +5x-35 \n");
-     
+        menu = entrada.nextInt();
         
+        while(menu < 1 || menu >10){
         System.out.println("Seleccione una opción correcta\n");
         menu = entrada.nextInt();
+        }
         
      
         System.out.println("Ingrese el inicio de x:\n");
@@ -86,9 +88,17 @@ public class DesarrolloPrincipal {
                 
                 break;
             case 6:
+                for (x = inicio;  x<= fin; x++) {
+                    y = 3*Math.pow(x,3) + 5*Math.pow(x,2) + 60;
+                    System.out.printf("x = %.2f   y= %.2f\n",x,y);
+                }
                 
                 break;
             case 7:
+                for (x = inicio;  x<= fin; x++) {
+                    y = Math.pow(x,3) + 3*Math.pow(x,2) + 2*x + 1;
+                    System.out.printf("x = %.2f   y= %.2f\n",x,y);
+                }
                 
                 break;
             case 8:
@@ -99,16 +109,22 @@ public class DesarrolloPrincipal {
                 break;
             case 10:
                 
-                break;
+                break;  
         
            }
             
             
         
-        System.out.println("¿Desea continuar? Digite (1.)\n");
+        System.out.println("¿Desea continuar?\n1.- Si\n2.- No");
         elegir = entrada.nextInt();
-        
+      
+        while (elegir < 1 || elegir > 2){
+           System.out.println("Ingrese una respuesta correcta");
+           elegir = entrada.nextInt();
+       } 
+       
         } while (elegir == 1);
+        
     }
 }
 

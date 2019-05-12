@@ -45,21 +45,21 @@ public class DesarrolloPrincipal {
         System.out.println("|___________________________________|");
         menu = entrada.nextInt();
         
-        while(menu < 1 || menu >10){
-        System.out.println("Seleccione una opción correcta\n");
+        while(menu < 1 || menu >10){ // condicion si el usuario diijta un numero que no esta en menu
+        System.out.println("Seleccione una opción correcta (Del 1 al 10)\n");
         menu = entrada.nextInt();
         }
         
      
-        System.out.println("Ingrese el inicio de x:\n");
+        System.out.println("Ingrese el inicio de x:\n"); // entrada de datos por el usuario del inicio de X
         inicio = entrada.nextDouble();
-        System.out.println("Ingrese el fin para x:\n");
+        System.out.println("Ingrese el fin para x:\n"); // entrada de datos por el usuario del fin de X
         fin = entrada.nextDouble();
         
           
             switch(menu){
             case 1:
-                for (x = inicio; x <= fin; x++){
+                for (x = inicio; x <= fin; x++){ // desarrollo de la primera funcion
                     y = 2*Math.pow(x,3) - 6*Math.pow(x,2) +20*x-1;
                     respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
                 }
@@ -67,41 +67,41 @@ public class DesarrolloPrincipal {
                 
                 break;
             case 2:
-                for (x = inicio; x <= fin; x++){
+                for (x = inicio; x <= fin; x++){ // desarrollo de la segunda funcion
                     y = 6*Math.pow(x,2) - 3/25;
                     respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
                 }
                 System.out.printf("%s", respuesta);
                 break;
             case 3:
-                for (x = inicio; x <= fin; x++){
+                for (x = inicio; x <= fin; x++){ // desarrollo de la tercera funcion
                     y = (Math.pow(x,4)-8) / (3*Math.pow(x,2) +5);
                     respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
                 }
                 System.out.printf("%s", respuesta);
                 break;
             case 4:
-                for (x = inicio ; x <= fin; x++){
+                for (x = inicio ; x <= fin; x++){ // desarrollo de la cuarta funcion
                     y = (Math.pow(x,3)+25*x+8);
                     respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
                 }
                 System.out.printf("%s", respuesta);
                 break;
             case 5:
-                for (x = inicio; x <= fin; x++){
+                for (x = inicio; x <= fin; x++){ // desarrollo de la quinta funcion
                     y= 3*Math.pow(x,2)+(5*x+3)/(2*x);
                     respuesta = String.format("%s%.2f | %.2f    \n",respuesta, x, y);
                 }
                 break;
             case 6:
-                for (x = inicio;  x<= fin; x++) {
+                for (x = inicio;  x<= fin; x++) { // desarrollo de la sexta funcion
                     y = 3*Math.pow(x,3) + 5*Math.pow(x,2) + 60;
                     respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
                 }
                 System.out.printf("%s", respuesta);
                 break;
             case 7:
-                for (x = inicio;  x<= fin; x++) {
+                for (x = inicio;  x<= fin; x++) { // desarrollo de la septima funcion
                     y = Math.pow(x,3) + 3*Math.pow(x,2) + 2*x + 1;
                     respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
                 }
@@ -121,11 +121,11 @@ public class DesarrolloPrincipal {
             
             
         
-        System.out.println("¿Desea continuar?\n1.- Si\n2.- No");
+        System.out.println("¿Desea continuar?\n1.- Si\n2.- No"); // si la repuesta del usuario es si, el menu aparecera de nuevo
         elegir = entrada.nextInt();
       
         while (elegir < 1 || elegir > 2){
-           System.out.println("Ingrese una respuesta correcta");
+           System.out.println("Ingrese una respuesta correcta"); // condicion si el usuario dijita alguna opcion que no esta en el menu
            elegir = entrada.nextInt();
        } 
        

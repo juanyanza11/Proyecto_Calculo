@@ -39,9 +39,9 @@ public class DesarrolloPrincipal {
         System.out.println("| 5.)  f(x) = 3x^2 + 5x+3/2x        |");
         System.out.println("| 6.)  f(x) = 3x^3 +5x^2 +60        |");
         System.out.println("| 7.)  f(x) = x^3 +3x^2 +2x+1       |");
-        System.out.println("| 8.)  f(x) = 4x*(2x^3 +20)        |");
+        System.out.println("| 8.)  f(x) = 4x*(2x^3 +20)         |");
         System.out.println("| 9.)  f(x) = (10x+3x^3 ) -2        |");
-        System.out.println("| 10.) f(x) = 3^3x+2 +5x-35         |");
+        System.out.println("| 10.) f(x) = 3x^4 +5x-35           |");
         System.out.println("|___________________________________|");
         menu = entrada.nextInt();
         
@@ -108,7 +108,7 @@ public class DesarrolloPrincipal {
                 System.out.printf("%s", respuesta);
                 break;
             case 8:
-                for (x = inicio;  x<= fin; x++) { // desarrollo de la septima funcion
+                for (x = inicio;  x<= fin; x++) { // desarrollo de la octava funcion
                     y = 4*x * (2*Math.pow(x,3) + 20);
                     respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
                 }
@@ -116,7 +116,7 @@ public class DesarrolloPrincipal {
           
                 break;
             case 9:
-                for (x = inicio;  x<= fin; x++) { // desarrollo de la septima funcion
+                for (x = inicio;  x<= fin; x++) { // desarrollo de la novena funcion
                     y = (10*x + 3*Math.pow(x,3)) -2;
                     respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
                 }
@@ -124,6 +124,12 @@ public class DesarrolloPrincipal {
                 
                 break;
             case 10:
+                 for (x = inicio; x <= fin; x++){ // desarrollo de la decima funcion
+                    y = (3*Math.pow(x,4) + 5*x - 35);
+                    respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
+                }
+                System.out.printf("%s", respuesta);
+                
                 
                 break;  
         

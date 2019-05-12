@@ -20,7 +20,7 @@ public class DesarrolloPrincipal {
          *              David Morales
          */
         Scanner entrada = new Scanner(System.in);
-        
+        // variables
         int menu, elegir;
         double inicio, fin, x, y;
         String respuesta = "Respuesta: \n   X | Y   \n";
@@ -31,16 +31,16 @@ public class DesarrolloPrincipal {
         System.out.println("     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
         System.out.println("Ejila una de las siguientes f1unciones\n");
         
-        System.out.println("|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|");
-        System.out.println("| 1.) f(x) = 2x^3 - 6x^2 +20x-1     |");
-        System.out.println("| 2.) f(x) = 6x^2 - 3 / 25          |");
-        System.out.println("| 3.) f(x) = x^4 -8 / 3x^2+5        |");
-        System.out.println("| 4.) f(x) = x^3 +25x+8             |");
-        System.out.println("| 5.) f(x) = 3x^2 + 5x+3/2x         |");
-        System.out.println("| 6.) f(x) = 3x^3 +5x^2 +60         |");
-        System.out.println("| 7.) f(x) = x^3 +3x^2 +2x+1        |");
-        System.out.println("| 8.) f(x) = 2x*(x^3 +23)           |");
-        System.out.println("| 9.) f(x) = (10x+3x^3 ) -2         |");
+        System.out.println("|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|"); // menu donde se muestras las 10 funciones
+        System.out.println("| 1.)  f(x) = 2x^3 - 6x^2 +20x-1    |"); // y el usuario puede escojer una de ellas para calcular
+        System.out.println("| 2.)  f(x) = 6x^2 - 3 / 25         |");
+        System.out.println("| 3.)  f(x) = x^4 -8 / 3x^2+5       |");
+        System.out.println("| 4.)  f(x) = x^3 +25x+8            |");
+        System.out.println("| 5.)  f(x) = 3x^2 + 5x+3/2x        |");
+        System.out.println("| 6.)  f(x) = 3x^3 +5x^2 +60        |");
+        System.out.println("| 7.)  f(x) = x^3 +3x^2 +2x+1       |");
+        System.out.println("| 8.)  f(x) = 2x*(x^3 +23)          |");
+        System.out.println("| 9.)  f(x) = (10x+3x^3 ) -2        |");
         System.out.println("| 10.) f(x) = 3^3x+2 +5x-35         |");
         System.out.println("|___________________________________|");
         menu = entrada.nextInt();

@@ -82,7 +82,10 @@ public class DesarrolloPrincipal {
                 
                 break;
             case 4:
-                
+                for (x = inicio ; x <= fin; x++){
+                    y = (Math.pow(x,3)+25*x+8);
+                    System.out.printf("x = %.2f   y= %.2f\n",x,y);
+                }
                 break;
             case 5:
                 

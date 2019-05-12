@@ -108,6 +108,11 @@ public class DesarrolloPrincipal {
                 System.out.printf("%s", respuesta);
                 break;
             case 8:
+                for (x = inicio;  x<= fin; x++) { // desarrollo de la septima funcion
+                    y = 2*x * (Math.pow(x,3) + 23);
+                    respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
+                }
+                System.out.printf("%s", respuesta);
           
                 break;
             case 9:

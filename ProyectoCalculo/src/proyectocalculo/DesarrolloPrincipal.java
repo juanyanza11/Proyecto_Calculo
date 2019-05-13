@@ -44,7 +44,9 @@ public class DesarrolloPrincipal {
         System.out.println("| 10.) f(x) = 3x^4 +5x-35           |");
         System.out.println("|___________________________________|");
         menu = entrada.nextInt();
-        
+         inicio = 0;
+         fin = 0;
+         respuesta = "";
         while(menu < 1 || menu >10){ // condicion si el usuario diijta un numero que no esta en menu
         System.out.println("Seleccione una opción correcta (Del 1 al 10)\n");
         menu = entrada.nextInt();
@@ -66,11 +68,13 @@ public class DesarrolloPrincipal {
                 System.out.printf("%s", respuesta);                   
                 
                 break;
+                
             case 2:
                 for (x = inicio; x <= fin; x++){ // desarrollo de la segunda funcion
                     y = 6*Math.pow(x,2) - 3/25;
                     respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
                 }
+               
                 System.out.printf("%s", respuesta);
                 break;
             case 3:
@@ -129,10 +133,8 @@ public class DesarrolloPrincipal {
                     respuesta = String.format("%s%.2f | %.2f   \n", respuesta, x, y);
                 }
                 System.out.printf("%s", respuesta);
-                
-                
                 break;  
-        
+       
            }
             
             

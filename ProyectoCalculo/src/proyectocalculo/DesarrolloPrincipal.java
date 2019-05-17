@@ -60,6 +60,7 @@ public class DesarrolloPrincipal {
         
           
             switch(menu){
+                    
             case 1:
                 for (x = inicio; x <= fin; x++){ // desarrollo de la primera funcion
                     y = 2*Math.pow(x,3) - 6*Math.pow(x,2) +20*x-1;
@@ -77,6 +78,7 @@ public class DesarrolloPrincipal {
                
                 System.out.printf("%s", respuesta);
                 break;
+                    
             case 3:
                 for (x = inicio; x <= fin; x++){ // desarrollo de la tercera funcion
                     y = (Math.pow(x,4)-8) / (3*Math.pow(x,2) +5);
@@ -84,6 +86,7 @@ public class DesarrolloPrincipal {
                 }
                 System.out.printf("%s", respuesta);
                 break;
+                    
             case 4:
                 for (x = inicio ; x <= fin; x++){ // desarrollo de la cuarta funcion
                     y = (Math.pow(x,3)+25*x+8);
@@ -91,6 +94,7 @@ public class DesarrolloPrincipal {
                 }
                 System.out.printf("%s", respuesta);
                 break;
+                    
             case 5:
                 for (x = inicio; x <= fin; x++){ // desarrollo de la quinta funcion
                     y= 3*Math.pow(x,2)+(5*x+3)/(2*x);
@@ -104,6 +108,7 @@ public class DesarrolloPrincipal {
                 }
                 System.out.printf("%s", respuesta);
                 break;
+                    
             case 7:
                 for (x = inicio;  x<= fin; x++) { // desarrollo de la septima funcion
                     y = Math.pow(x,3) + 3*Math.pow(x,2) + 2*x + 1;
@@ -111,6 +116,7 @@ public class DesarrolloPrincipal {
                 }
                 System.out.printf("%s", respuesta);
                 break;
+                    
             case 8:
                 for (x = inicio;  x<= fin; x++) { // desarrollo de la octava funcion
                     y = 4*x * (2*Math.pow(x,3) + 20);
@@ -119,6 +125,7 @@ public class DesarrolloPrincipal {
                 System.out.printf("%s", respuesta);
           
                 break;
+                    
             case 9:
                 for (x = inicio;  x<= fin; x++) { // desarrollo de la novena funcion
                     y = (10*x + 3*Math.pow(x,3)) -2;
@@ -127,6 +134,7 @@ public class DesarrolloPrincipal {
                 System.out.printf("%s", respuesta);
                 
                 break;
+                    
             case 10:
                  for (x = inicio; x <= fin; x++){ // desarrollo de la decima funcion
                     y = (3*Math.pow(x,4) + 5*x - 35);
